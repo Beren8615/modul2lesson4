@@ -1,0 +1,42 @@
+body {
+    font-family: 'Hamburg T, Kastler T, Belwe Std', Times, serif, sans-serif; /* Yazı tipi ailesi */
+    font-size: 15px; /* <p></p> etiketindeki ana yazının boyutu */
+    background-color: #000000; /* Web sayfasının arka plan rengi */
+    color: #44ced3; /* Metin rengi */
+}
+
+h1 {
+    color: #8ba4ce; /* Başlık rengi */
+    font-size: 24px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+@keyframes color-change {
+    0% {
+      color: rgb(0, 0, 0);
+    }
+  
+    20% {
+      color: rgb(255, 255, 255);
+    }
+  
+    40% {
+      color: rgb(0, 0, 0);
+    }
+
+    60% {
+        color: rgb(255, 255, 255);
+    }
+
+    80% {
+        color: rgb(0, 0, 0);
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+h1 {
+    animation: color-change 20s infinite;
+}
